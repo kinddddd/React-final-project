@@ -33,15 +33,16 @@ const ChampionDetails = () => {
                 <div>
                     {champion.spells.map((spell) => {
                         return (
-                            <div className='spells'>
+                            <div className='spell'>
                                 <p>{spell.name}</p>
                                 <img src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/spell/${spell.image.full}`} alt={spell.name}/>
-                                <p>{spell.description}</p>
+                                <p className='spellDescription'>{spell.description}</p>
                             </div>
                         )
                     })}
                 </div>
             </div>
+
         </div>
     </div>
   )
