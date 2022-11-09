@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Friz-Quadrata-Regular;
+  src: local("Friz-Quadrata-Regular"),
+    url("./fonts/Friz-Quadrata-Regular.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
