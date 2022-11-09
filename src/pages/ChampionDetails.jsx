@@ -1,4 +1,5 @@
 import axios from 'axios';
+import "./ChampionDetails.scss"
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -19,8 +20,29 @@ const ChampionDetails = () => {
 
 
   return (
-    <div>
-        <p>{champion.name}</p>
+    <div className='champContainer'>
+        <div className='champ'>
+            <p className='title'>{champion.name}</p>
+            <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg`} alt={champion.name} className="champImg"/>
+            <div className='lore'>
+                <p className='loreTitle'>Lore</p>
+                <p className='loreText'>{champion.lore}</p>
+            </div>
+            <div className='spells'>
+                <p className='spellsTitle'>Spells</p>
+                <div>
+                    {champion.spells.map((spell) => {
+                        return (
+                            <div className='spells'>
+                                <p>{spell.name}</p>
+                                <img src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/spell/${spell.image.full}`} alt={spell.name}/>
+                                <p>{spell.description}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+        </div>
     </div>
   )
 }

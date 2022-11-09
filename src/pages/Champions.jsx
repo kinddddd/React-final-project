@@ -22,11 +22,11 @@ const Champions = () => {
         <div className='cardContainer'>
             {Object.keys(champions).map((value, index) => {
                 return (
-                    <div key={champions[value].key} className="card">
-                        <img src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/champion/${champions[value].image.full}`} alt={champions[value].name} />
-                        <p>{champions[value].name}</p>
-                        <p>{champions[value].title}</p>
-                        <Link to={`/champions/${champions[value].name}`}>More info</Link>
+                    <div key={champions[value].key} className="card"> 
+                        <Link to={`/champions/${champions[value].name}`} className="moreInfo">
+                            <img src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/champion/${champions[value].image.full}`} alt={champions[value].name} />
+                            <p>{champions[value].name} {champions[value].title}</p>
+                        </Link>
                     </div>
                 )
             })}
