@@ -46,10 +46,23 @@
 
 .spells{
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.spellsCell {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
 .spellsTitle {
     font-size: 1.8rem;
+    margin:0px;
 }
 
 .spellDescription {

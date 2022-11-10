@@ -25,7 +25,7 @@ const Champions = () => {
                     <div key={champions[value].key} className="card"> 
                         <Link to={`/champions/${champions[value].name}`} className="moreInfo">
                             <img src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/champion/${champions[value].image.full}`} alt={champions[value].name} />
-                            <p>{champions[value].name} {champions[value].title}</p>
+                            <p>{champions[value].name}, {champions[value].title}</p>
                         </Link>
                     </div>
                 )
