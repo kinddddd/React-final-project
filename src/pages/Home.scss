@@ -1,0 +1,45 @@
+.homeBox {
+    background-color: black;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.homeTitleBox {
+    margin-bottom: 20px;
+}
+
+.homeTitle {
+    font-size: 2.0rem;
+}
+
+.homeTitleGolden {
+    font-size: 2.7rem;
+    color: #C1AD70;
+    text-decoration: none;
+}
+
+.transcript {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transcriptTitle {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 20px 0 0 0;
+    color: #C1AD70;
+    text-decoration: underline;
+}
+
+.transcriptText {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.transcriptText > p {
+    line-height: 25px;
+}

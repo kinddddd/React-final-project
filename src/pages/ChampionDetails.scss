@@ -40,6 +40,9 @@
 
 .lore{
     width: 40%;
+}
+
+.loreHeaders {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -81,11 +84,18 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    height: 60%;
+    
+}
+
+.spellsHeader {
+    height: 70px;
 }
 
 .spellsImg {
     cursor: pointer;
 }
+
 
 .spellsTitle {
     font-size: 1.8rem;
@@ -99,5 +109,5 @@
 }
 
 .selectedSpell {
-    border: 2px solid yellow;
+    border: 2px solid #C1AD70;
 }

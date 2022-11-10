@@ -25,13 +25,17 @@ const ChampionDetails = () => {
             <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg`} alt={champion.name} className="champImg"/>
             <div className='champ'>
                 <div className='lore'>
-                    <img className='champIcon' src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/champion/${champion.image?.full}`} alt={champion.name} />
-                    <p className='loreName'>{champion.name?.toUpperCase()}</p>
-                    <p className='loreTitle'>{champion.title?.toUpperCase()}</p>
-                    <p className='loreText'>{champion.lore}</p>
+                    <div className='loreHeaders'>
+                        <img className='champIcon' src={`http://ddragon.leagueoflegends.com/cdn/12.21.1/img/champion/${champion.image?.full}`} alt={champion.name} />
+                        <p className='loreName'>{champion.name?.toUpperCase()}</p>
+                        <p className='loreTitle'>{champion.title?.toUpperCase()}</p>
+                        <p className='loreText'>{champion.lore}</p>
+                    </div>
                 </div>
                 <div className='spells'>
-                    <p className='spellsTitle'>Abilities</p>
+                    <div className='spellsHeader'>
+                        <p className='spellsTitle'>Abilities</p>
+                    </div>
                     <div className='spellsCell'>
                         <div>
                             {spellStyle === 'Q'
