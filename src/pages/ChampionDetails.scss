@@ -1,5 +1,5 @@
 .champImg {
-    width: 70%;
+    width: 90%;
 }
 
 .champContainer {
@@ -10,19 +10,28 @@
     font-size: 1.0rem;
 }
 
-.champ {
+.champBox {
     width: 70%;
+    padding: 10px;
+}
+
+.champ {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
+    margin: 0px;
 }
 
 /* .lore{
 } */
 
 .loreTitle {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin: 5px;
 }
 
@@ -32,6 +41,7 @@
     background-color: #1a1a1a;
     border: 1px solid #4d4d4d;
     border-radius: 5px;
+    width: 300px;
 }
 
 .spells{
@@ -39,7 +49,7 @@
 }
 
 .spellsTitle {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .spellDescription {

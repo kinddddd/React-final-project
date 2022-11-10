@@ -1,7 +1,7 @@
 @font-face {
-  font-family: Friz-Quadrata-Regular;
-  src: local("Friz-Quadrata-Regular"),
-    url("./fonts/Friz-Quadrata-Regular.ttf") format("truetype");
+  font-family: BeaufortforLOL-Regular;
+  src: local("BeaufortforLOL-Regular"),
+    url("./fonts/BeaufortforLOL-Regular.woff") format("truetype");
 }
 
 body {
