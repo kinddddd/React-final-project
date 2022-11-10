@@ -25,7 +25,8 @@ const ChampionDetails = () => {
             <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg`} alt={champion.name} className="champImg"/>
             <div className='champ'>
                 <div className='lore'>
-                    <p className='loreTitle'>{champion.name}</p>
+                    <p className='loreName'>{champion.name?.toUpperCase()}</p>
+                    <p className='loreTitle'>{champion.title?.toUpperCase()}</p>
                     <p className='loreText'>{champion.lore}</p>
                 </div>
                 <div className='spells'>
@@ -76,7 +77,7 @@ const ChampionDetails = () => {
                             <p>{champion.spells?.[3].name}</p>
                         </div>
                     </div>
-                    <p>{spellDescription}</p>
+                    <p className='spellDescription'>{spellDescription}</p>
                 </div>
             </div>
         </div>

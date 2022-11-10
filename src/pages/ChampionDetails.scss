@@ -1,5 +1,8 @@
 .champImg {
-    width: 90%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 0%;
 }
 
 .champContainer {
@@ -13,6 +16,8 @@
 .champBox {
     width: 70%;
     padding: 10px;
+    margin: 10px;
+    border: 1px solid #C1AD70;
 }
 
 .champ {
@@ -29,11 +34,21 @@
 
 .lore{
     width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.loreName {
+    font-size: 2.0rem;
+    margin: 0px;
 }
 
 .loreTitle {
-    font-size: 1.8rem;
-    margin: 5px;
+    font-size: 1.5rem;
+    margin: 0px;
+    color: #C1AD70;
 }
 
 .loreText {
