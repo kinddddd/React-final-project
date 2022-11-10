@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .spellsCell {
@@ -60,6 +60,10 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
+}
+
+.spellsImg {
+    cursor: pointer;
 }
 
 .spellsTitle {
@@ -71,4 +75,8 @@
     background-color: #1a1a1a;
     border: 1px solid #4d4d4d;
     border-radius: 5px;
+}
+
+.selectedSpell {
+    border: 2px solid yellow;
 }
