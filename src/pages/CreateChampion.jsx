@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 const CreateChampion = () => {
 
-    const {register, handleSubmit, formState: {errors, isValid}} = useForm();
+    const {register, handleSubmit} = useForm();
 
   return (
     <form >
