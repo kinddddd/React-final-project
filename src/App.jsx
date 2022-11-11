@@ -3,6 +3,7 @@ import './App.scss';
 import Navbar from './components/Navbar';
 import ChampionDetails from './pages/ChampionDetails';
 import Champions from './pages/Champions';
+import CreateChampion from './pages/CreateChampion';
 import Home from './pages/Home';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="" element={<Home/>}/>
         <Route path="champions" element={<Champions/>}/>
         <Route path="champions/:name" element={<ChampionDetails/>}/>
+        <Route path="createchampion" element={<CreateChampion/>}/>
       </Routes>
     </div>
   );

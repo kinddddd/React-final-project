@@ -8,13 +8,14 @@ const ChampionDetails = () => {
     const {name} = useParams();
     const navigate = useNavigate();
     const [champion, setChampion] = useState({});
-    const [spellDescription, setSpellDescription] = useState(champion.spells?.[0].description);
+    const [spellDescription, setSpellDescription] = useState();
     const [spellStyle, setSpellStyle] = useState('Q');
     
     useEffect(() => {
         const getChampion = async () => {
             const res = await axios.get(`http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion/${name}.json`)
             setChampion(res.data.data[name]);
+            setSpellDescription(res.data.data[name].spells?.[0].description);
         }
         getChampion();
     },[])
