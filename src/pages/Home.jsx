@@ -13,16 +13,16 @@ const Home = () => {
           {" "}
           LEAGUE OF LEGENDS{" "}
         </a>
-        <span className="homeTitle">CHAMPIONS API</span>
+        <span className="homeTitle">WEB PAGE</span>
       </div>
       <iframe
         width="1020"
         height="574"
         src="https://www.youtube.com/embed/BGtROJeMPeE"
         title="What is League of Legends?"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       />
       <div className="transcript">
         <p className="transcriptTitle">TRANSCRIPT</p>
